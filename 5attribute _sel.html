@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+a[href]{
+    color: red;
+    text-decoration: none;
+}
+a[href^="https"]{
+    border: 5px dotted blue;
+}
+a[href$=".com"]{
+    background-color: yellow;
+}
+input[type="submit"]{
+    border: 2px solid green;
+}   
+input[placeholder]{
+    color: rgb(255, 0, 0);
+    background-color: rgb(223, 223, 8);
+}
+input[type="submit"]{
+    color: rgb(186, 228, 15);
+    background-color: tomato;
+
+}
+  </style>
+</head>
+<body>
+<a href="https://www.youtube.com" target="_blank">
+    youtube
+</a><br><br>
+<a href="https://openai.com">OpenAI</a><br><br>
+<a href="https://www.facebook.in" target="_blank">
+    facebook
+</a><br><br>
+<a href="mailto:someone@gmail.com">
+    send email
+</a><br><br> 
+<input type="text" placeholder="enter text here">
+<input type="submit" value="submit">
+</body>
+</html>
