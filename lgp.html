@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@100..800&family=Foldit:wght@100..900&family=Noto+Sans+Kannada:wght@100..900&display=swap');
+        body {
+            margin: 0;
+            font-family: serif;
+
+            background: 
+                linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+                url("img/space.jpg") no-repeat center/cover;
+
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            width: 100%;
+        }
+
+        fieldset.outer {
+            width: 400px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            margin: auto;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        fieldset.inner {
+            width: 300px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
+            padding: 20px;
+            margin: auto;
+            border: none;
+        }
+
+        legend {
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        label {
+            color: white;
+        }
+
+        input {
+            width: 200px;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+
+        a {
+            color: #ffd369;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        input[type="button"] {
+            width: 100px;
+            background: linear-gradient(45deg, #ff7eb3, #65d6ce);
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        input[type="button"]:hover {
+            transform: scale(1.1);
+            opacity: 0.9;
+        }
+
+        center {
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+
+<body>
+
+<form>
+    <fieldset class="outer">
+       <legend style="color: yellowgreen; font-family: 'Foldit', sans-serif; font-size: 30px;" >Green Bridge</legend>
+
+        <fieldset class="inner">
+            <legend>Login</legend>
+
+            <label>Username:</label>
+            <input type="text" placeholder="Enter username"><br><br>
+
+            <label>Password:</label>
+            <input type="password" placeholder="Enter password"><br><br>
+
+            <a href="forgot page.html">Forgot password?</a><br><br>
+
+            <center>
+                <input type="button" value="Login"><br><br>
+                Don't have an account? <a href="signup.html">Sign up</a>
+            </center>
+
+        </fieldset>
+    </fieldset>
+</form>
+
+</body>
+</html>
