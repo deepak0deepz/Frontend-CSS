@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>artisy</title>
+    <style>
+       
+        @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Explora&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Baumans&display=swap');
+        body{
+            background-color: #b0c4b1;
+        }
+        header{
+            text-align: center;
+            background-color: #b0c4b1;
+            font-family: "MedievalSharp", cursive;
+        }
+        .menu{
+            float:left;
+            margin-left:40px;
+            text-align: center;
+            padding-left: 500px;
+            padding-right: 500px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: #dedbd2;
+            border: 0px solid;
+            border-radius: 50px;
+        }
+
+        .menu a{
+            text-decoration:none;
+            color:black;
+            margin:0 15px;
+            font-size:14px;
+        }
+
+        .menu a.active{
+            background-color:black;
+            color:white;
+            padding:8px 18px;
+            border-radius:20px;
+        }
+        .quote{
+            text-align: center;
+            padding-top: 70px;
+            
+            
+        }
+        .mainq1{
+            font-family: "Eagle Lake", serif;
+            color: black;
+
+        }
+        .mainq2{
+            font-family: "Explora", serif;
+
+        }
+        .imgg{
+            margin-top:40px;
+            overflow:hidden;
+            margin-left: 20px;
+         }
+
+        .imgg img{
+            width:350px;
+            float:left;
+            object-fit:cover;
+            border: 0px solid;
+            border-radius: 20px;
+            margin: 5px;
+        }
+        .btn{
+            border: 0px solid;
+            border-radius: 30px;
+            padding-top: 10px;
+            padding-bottom :10px;
+            padding-right: 10px;
+            padding-left: 10px;
+            font-family: "Baumans", system-ui;
+            background-color: #dedbd2;
+            color: rgb(153, 97, 51);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Art world
+        </h1>
+    </header>
+    <nav>
+        <div class="menu">
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#features">Features</a>
+            <a href="#product">Product</a>
+            <a href="#gallery">Gallery</a>
+            
+        </div>
+    </nav>
+    <main>
+        <div class="quote">
+            <h1 class="mainq1">Crafted by Passion, Witness</h1>
+            <h1 class="mainq2">The Story Within Each Stroke </h1>
+            <button class="btn">Explore</button>
+        </div>
+        <div class="imgg">
+            <img src="img/space.jpg">
+            <img src="img/space.jpg">
+            <img src="img/space.jpg">
+            <img src="img/space.jpg">
+        </div>
+    </main>
+</body>
+</html>

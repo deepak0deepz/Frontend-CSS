@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qlick - Art</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;}
+
+body{
+  background:#fff;
+  color:#111}
+
+.navbar{
+  padding:20px 5%;
+  overflow:hidden;}
+
+.logo{
+  float:left;
+  font-weight:bold;
+  font-size:22px;}
+
+.nav-container{
+  text-align:center;
+  width:60%;
+  display:inline-block;}
+
+.nav-pill{
+  display:inline-block;
+  border:1px solid #eee;
+  border-radius:50px;
+  padding:5px;
+  background:#fafafa;
+}
+
+.nav-item{
+  display:inline-block;
+  padding:10px 20px;
+  font-size:14px;
+  color:#777;
+  text-decoration:none;
+}
+
+.nav-item:hover{
+  color:black;
+}
+
+.nav-item.active{
+  background:black;
+  color:white;
+  border-radius:40px;
+  }
+
+.btn-header{
+  float:right;
+  background:black;
+  color:white;
+  padding:10px 25px;
+  border-radius:50px;
+  text-decoration:none;
+}
+
+
+.hero{
+  padding:90px 10%;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:48px;
+  line-height:1.2;
+}
+.hero span{
+  font-style:italic;
+  text-decoration:underline;
+}
+
+.hero p{
+  color:#666;
+  margin:20px auto;
+  max-width:650px;
+}
+
+.btn-cta{
+      display:inline-block;
+      background:black;
+      color:white;
+      padding:15px 40px;
+      border-radius:50px;
+      text-decoration:none;
+}
+
+
+.section{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.section h2{
+  margin-bottom:15px;
+  font-size:32px;
+}
+.section p{
+  color:#555;
+  max-width:700px;
+  margin:auto;
+}
+
+
+.gallery{
+  overflow:hidden;
+  margin-top:40px;
+}
+
+.card{
+  float:left;
+  width:33.33%;
+  padding:10px;
+}
+
+.card img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+  border-radius:15px;
+  }
+  .imgart{
+    width: 200px;
+    border: 0px solid;
+    border-radius: 10px;
+    
+  }
+</style>
+</head>
+
+<body>
+
+<header class="navbar">
+<div class="logo">Qlick.</div>
+
+<div class="nav-container">
+<div class="nav-pill">
+<a href="#home" class="nav-item active">Home</a>
+<a href="#exhibition" class="nav-item">Exhibition</a>
+<a href="#artists" class="nav-item">Artists</a>
+<a href="#pricing" class="nav-item">Pricing</a>
+<a href="#contact" class="nav-item">Contact</a>
+</div>
+</div>
+
+<a href="#exhibition" class="btn-header">Start Exploring</a>
+</header>
+
+<!-- HOME -->
+<section id="home" class="hero">
+<h1>
+The Art of Human Expression, Uncover <br>
+<span>The Stories Behind the Art</span>
+</h1>
+
+<p>
+Discover creativity and explore artistic masterpieces from around the world.
+</p>
+
+<a href="#exhibition" class="btn-cta">Explore Gallery</a>
+</section>
+
+<!-- EXHIBITION -->
+<section id="exhibition" class="section">
+<h2>Exhibition</h2>
+<p>Explore curated digital artwork collections.</p>
+
+<div class="gallery">
+<div class="card"><img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5"></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1549490349-8643362247b5"></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3"></div>
+</div>
+</section>
+
+<!-- ARTISTS -->
+<section id="artists" class="section">
+  <img class="imgart" src="img/MY PIC.jpg">
+<h2>Artists</h2>
+<p>Meet creative minds behind the masterpieces.</p>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="section">
+<h2>Pricing</h2>
+<p>Affordable plans for collectors and creators.</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+<h2>Contact</h2>
+<p>Email: artgallery@mail.com</p>
+</section>
+
+</body>
+</html>

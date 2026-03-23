@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<title>Art Landing Page</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color:#f2f2f2;
+}
+
+
+.container{
+    width:90%;
+    margin:40px auto;
+    background-color:white;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.15);
+    overflow:hidden;
+}
+
+
+.nav{
+    overflow:hidden;
+}
+
+.logo{
+    float:left;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.menu{
+    float:left;
+    margin-left:40px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:black;
+    margin:0 15px;
+    font-size:14px;
+}
+
+.menu a.active{
+    background-color:black;
+    color:white;
+    padding:8px 18px;
+    border-radius:20px;
+}
+
+.btn{
+    float:right;
+    background-color:black;
+    color:white;
+    padding:8px 20px;
+    border-radius:20px;
+    text-decoration:none;
+}
+
+.hero{
+    text-align:center;
+    margin-top:40px;
+}
+
+.hero h1{
+    font-size:34px;
+    line-height:45px;
+    letter-spacing:1px;
+}
+
+.hero span{
+    font-style:italic;
+}
+
+.hero p{
+    margin-top:15px;
+    color:#666;
+    line-height:22px;
+}
+
+.hero .explore{
+  display:inline-block;
+  margin-top:20px;
+  background-color:black;
+  color:white;
+  padding:10px 25px;
+  border-radius:20px;
+  text-decoration:none;
+  box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+.images{
+    margin-top:40px;
+    overflow:hidden;
+}
+
+.images img{
+  width:33.33%;
+  float:left;
+  height:260px;
+  object-fit:cover;
+}
+
+.bottom{
+    background-color:white;
+    height:40px;
+    border-radius:0 0 50px 50px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="nav">
+        <div class="logo">DCS art</div>
+
+        <div class="menu">
+            <a class="active" href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Features</a>
+            <a href="#">Product</a>
+            <a href="#">Gallery</a>
+        </div>
+
+        <a class="btn" href="#">Explore</a>
+    </div>
+
+    <div class="hero">
+        <h1>
+            The Art of Human Expression, Uncover <br>
+            The <span>Stories</span> Behind the Art
+        </h1>
+
+        <p>
+            Discover new favorites among our diverse exhibitions.
+            Uncover the stories and inspirations behind the art
+        </p>
+
+        <a class="explore" href="#">Explore</a>
+    </div>
+
+    <div class="images">
+        <img src="https://images.unsplash.com/photo-1549887534-1541e9326642">
+        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5">
+        <img src="https://images.unsplash.com/photo-1604871000636-074fa5117945">
+    </div>
+
+    <div class="bottom"></div>
+
+</div>
+
+</body>
+</html>
