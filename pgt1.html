@@ -4,28 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
     <style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+        body{
+            margin:0;
+            box-sizing:border-box;
+        }
         .logo{
-            height: 30px;
+            height: 80px;
+        }
+        .h{
+            width: 10%;
         }
         .headd{
-            display: flex;
-            background-color: rgb(92, 51, 26);
-            padding: 5px;
-            color: whitesmoke;
+        /* width:100%; */
+        display:flex;
+        align-items:center;
+        background-color: rgb(235, 231, 229);
+        padding:5px;
         }
        
         
         .divinfo{
-            width:100%;
+            width: 80%;
+            color: black;
             display: flex;
-            justify-content:end;
+            justify-content:center;
             align-items:center;
             flex-direction: row;
             flex-wrap: wrap;
             gap: 30px;
             padding-right: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: "IBM Plex Sans", sans-serif;
+
             
+        }
+
+            
+        
+        .headicon{
+        width: 10%;
+        
+        display:flex;
+        align-items:center;
+        gap:10px;
+        margin-right:15px;
+        color:black;
+        }
+
+        .iconh{
+            color: black;
+            width: 50px;
+            font-size: 30px;
         }
         .navv1{
             width:100%;
@@ -34,16 +68,94 @@
             background-color: brown;
             color: aliceblue;
         }
+        .mainn{
+            margin:0%;
+       
+            height: 600px;
+            width:99%;
+        }
         .main1{
-            width:90px;
+            margin:0%;
+       
             height: 500px;
-            background-color: burlywood;
+            width:99%;
+            overflow:hidden;
+            overflow: hidden;
+            background-color: rgb(237, 235, 232);
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
             align-content: center;
             padding-left: 5px;
         }
+        .himg{
+            margin: 0px;
+            height: 100%;
+
+            width:100%;
+            display:block;
+
+        }
+        .htex{
+            color: black;
+            position:absolute;
+            bottom:150px;
+            left: 50px;;
+            background:rgba(0,0,0,0.7);
+            color:white;
+            padding:3px 100px;
+            font-size:24px;
+        }
+        .hname{
+            font-size: 30px;
+            padding-left: 60px;
+        }
+        .desc{
+            height: 500px;
+        }
+        .dataimg{
+            width: 350px;
+        }
+        .dataa{
+            display: flex;
+            justify-content:space-evenly;
+            flex-direction: row;
+        }
+        .linq{
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            text-align: justify;
+            justify-content:space-evenly ;
+            border: 0px solid;
+            background-color: rgb(166, 169, 169);
+            font-size: 17px;
+
+        }
+        .hotdes{
+            width: 300px;
+            
+        }
+        .desq2{
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            text-align: justify;
+            justify-content:space-evenly;
+            padding-right:0px;
+            border: 0px solid;
+            font-size: 17px;
+        }
+        .desq{
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            text-align: justify;
+            justify-content:space-evenly ;
+            border: 0px solid;
+            font-size: 17px;
+        }
+        
     </style>
 </head>
 <body>
@@ -51,37 +163,60 @@
         <div class="headd">
 
             <div class="h">
-                <a class="logo">HELLO</a>
+                <img src="hotel/phoenix-logo.png" class="logo">
             </div>
 
             <div class="divinfo">
                 <a>HOME</a>
-                <a>ABOUT</a>
-                <a>CONTACT</a>
+                <a>ORDER</a>
+                <a>FOOD</a>
+                <a>RESTAURANT</a>
+                <a>TESTIMONIAL</a>
+                <a>CONTACT US</a>
+            </div>
+            <div class="headicon">
+                <a class="iconh"><i class="fa-brands fa-whatsapp"></i></a>
+                <a class="iconh"><i class="fa-brands fa-facebook"></i></a>
             </div>
         </div>
     </header>
-    <nav class="navv">
-        <div class="navv1">
-            <a>HOME</a>
-            <a>ABOUT</a>
-            <a>CONTACT</a>
-            <a>HOME</a>
-            <a>ABOUT</a>
-            <a>CONTACT</a>
-        </div>
-    </nav>
     <main>
-         <div class="mainn">
-        <div class="main1">
-            <a>HOME</a>
-            <a>ABOUT</a>
-            <a>CONTACT</a>
-            <a>HOME</a>
-            <a>ABOUT</a>
-            <a>CONTACT</a>
+        <div class="mainn">
+            <div class="main1">
+                <img src="hotel/heroimg.jpg" class="himg">
+            
+                <div class="htex">
+                    <h2>Hotel TAJ</h2>
+                </div>
+            </div> 
+            <div class="linq">
+                <p  class="hotdes">Lorem Ipsum is simply dummy text of theprinting and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                <p  class="hotdes">Lorem Ipsum is simply dummy text of theprinting and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                <p  class="hotdes">Lorem Ipsum is simply dummy text of theprinting and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            </div>
         </div>
-    </div>
+
+        <div class="desc">
+            <div class="hname">
+                <h2>Hotel TAJ</h2>
+            </div>
+
+            <div class="dataa">
+                <img class="dataimg" src="hotel/rooms.jpg">
+                <img class="dataimg" src="hotel/dining.jpg">
+                <img class="dataimg" src="hotel/pool.jpg">
+            </div>
+             <div class="desq2">
+                <h5  class="hotdes">Rooms</h5>
+                <h5  class="hotdes">Dining</h5>
+                <h5 class="hotdes">Pool</h5>
+            </div>
+             <div class="desq">
+                <p  class="hotdes">Lorem Ipsum is simply dummy text of theprinting and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                <p  class="hotdes">Lorem Ipsum is simply dummy text of theprinting and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                <p  class="hotdes">Lorem Ipsum is simply dummy text of theprinting and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            </div>
+        </div>
     </main>
 </body>
 </html>
