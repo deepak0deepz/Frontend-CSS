@@ -60,6 +60,8 @@
             color: black;
             width: 50px;
             font-size: 30px;
+        
+            
         }
         .navv1{
             width:100%;
@@ -155,6 +157,51 @@
             border: 0px solid;
             font-size: 17px;
         }
+
+
+
+
+        .desc{
+            padding:40px;
+        }
+
+        .group{
+            display:flex;
+            justify-content:space-evenly;
+        }
+
+        .desc1{
+            width:350px;
+        }
+
+        .desc1 img{
+            width:100%;
+            height:230px;
+            object-fit:cover;
+        }
+
+        .desc1 h2{
+            margin:15px 0;
+            text-align:center;
+        }
+
+        .desc1 p{
+            text-align:justify;
+        }
+        .desc1 a{
+            background-color:black;
+            color:white;
+            text-decoration:none;
+            width:100px;
+            height:30px;   
+            display: flex;
+            text-align: end;
+            text-align:center;
+            justify-content: center;
+            margin-left: 130px;
+            padding-top: 5px;
+
+        }
         
     </style>
 </head>
@@ -196,25 +243,33 @@
             </div>
         </div>
 
+        
         <div class="desc">
-            <div class="hname">
-                <h2>Hotel TAJ</h2>
-            </div>
+            <h2>Hotel TAJ</h2>
 
-            <div class="dataa">
-                <img class="dataimg" src="hotel/rooms.jpg">
-                <img class="dataimg" src="hotel/dining.jpg">
-                <img class="dataimg" src="hotel/pool.jpg">
-            </div>
-             <div class="desq2">
-                <h5  class="hotdes">Rooms</h5>
-                <h5  class="hotdes">Dining</h5>
-                <h5 class="hotdes">Pool</h5>
-            </div>
-             <div class="desq">
-                <p  class="hotdes">Lorem Ipsum is simply dummy text of theprinting and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                <p  class="hotdes">Lorem Ipsum is simply dummy text of theprinting and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                <p  class="hotdes">Lorem Ipsum is simply dummy text of theprinting and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <div class="group">
+
+                <div class="desc1">
+                    <img src="hotel/rooms.jpg">
+                    <h2>Rooms</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua....</p>
+                    <a href="#" class="link">Learn More</a>
+                </div>
+
+                <div class="desc1">
+                    <img src="hotel/dining.jpg">
+                    <h2>Dining</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua....</p>
+                    <a href="#" class="link">Learn More</a>
+                </div>
+
+                <div class="desc1">
+                    <img src="hotel/pool.jpg">
+                    <h2>Pool</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua....</p>
+                    <a href="#" class="link">Learn More</a>
+                </div>
+
             </div>
         </div>
     </main>
