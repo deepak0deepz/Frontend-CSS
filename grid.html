@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background-color: rgb(0, 255, 255);
+            padding: 15px;
+        }
+        .title{
+            display: grid;
+            align-items: center;
+            justify-items: center;
+        }
+        body{
+            background-color:cadetblue;
+            width: 100%;
+        }
+        .bodyy{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        gap:10px;
+        margin-top:20px;
+        }
+
+    .one1{
+    grid-row: span 2;  
+    height:410px;
+    background-color:aquamarine;
+    }
+
+    .one2,.one3{
+    height:200px;
+    background-color:rgb(16, 103, 74);
+    }
+
+    .one4{
+    grid-column: span 2;   
+    height:200px;
+    background-color:rgb(127,255,129);
+  
+    }
+
+    .i{
+        margin: 150px 70px 100px 390px;
+          /* visibility:hidden;     */
+    }
+    .j{width: 100vh;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1>Image gallery</h1>
+        </div>
+    </header>
+    <main>
+        <div class="bodyy">
+            <div class="one1"></div>
+            <div class="one2"></div>
+            <div class="one3"></div>
+            <div class="one4"></div>
+        </div >
+        <hr style="padding-top:20px ;">
+
+        <center>
+        <img class=" o" src="img/The Batman – A Darker Dawn of Justice.jpg">
+        </center>
+        <hr style="padding-top:10px ;">
+        <img class=" i" src="img/The Batman – A Darker Dawn of Justice.jpg">
+        <hr style="padding-top:10px ;">
+        <img class=" j" src="img/The Batman – A Darker Dawn of Justice.jpg">
+
+    </main>
+    
+    
+</body>
+</html>
