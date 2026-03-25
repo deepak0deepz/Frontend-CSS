@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .par{
+            display: flex;
+            justify-content: center;
+            align-content: center;    
+            position: relative; 
+            top: 300px;
+            left: 50px;       
+        }
+        .c{
+            height: 200px;
+            width: 200px;
+            position: absolute;
+        }
+        #o1{
+            top: 20px;
+            left: 600px;
+            z-index: 1;
+        }
+        #o2{
+            top: 50px;
+            left: 630px;
+            z-index: 2;
+        }
+        #o3{
+            top: 80px;
+            left: 660px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="par">
+        <img class="c" id="o1" src="img/netflix.jpg">
+        <img class="c" id="o2" src="img/space.jpg">
+        <img class="c" id="o3" src="img/The Batman – A Darker Dawn of Justice.jpg">
+    </div>
+</body>
+</html>
