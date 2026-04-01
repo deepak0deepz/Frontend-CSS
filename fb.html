@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Facebook Signup</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#1877f2,#42b72a);
+    min-height:100vh;
+}
+
+/* CENTER */
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+/* GLASS BOX */
+.signup-box{
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(10px);
+    width:100%;
+    max-width:400px;
+    padding:25px 20px;
+    border-radius:15px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.signup-box:hover{
+    transform:translateY(-5px);
+}
+
+/* TITLE */
+.signup-box h1{
+    color:#1877f2;
+    text-align:center;
+    margin-bottom:5px;
+    font-size:32px;
+    font-weight:bold;
+}
+
+.signup-box p{
+    text-align:center;
+    color:#606770;
+    margin-bottom:20px;
+    font-size:14px;
+}
+
+/* FORM */
+form{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+/* NAME ROW */
+.name-row{
+    display:flex;
+    gap:10px;
+}
+
+.name-row input{
+    width:100%;
+}
+
+/* INPUTS */
+input, select{
+    width:100%;
+    padding:12px;
+    border:1px solid #dddfe2;
+    border-radius:8px;
+    font-size:14px;
+    transition:0.2s;
+}
+
+/* INPUT FOCUS */
+input:focus, select:focus{
+    outline:none;
+    border-color:#1877f2;
+    box-shadow:0 0 0 2px rgba(24,119,242,0.2);
+}
+
+/* LABEL */
+.label{
+    font-size:13px;
+    color:#606770;
+    margin-bottom:3px;
+}
+
+/* ROW */
+.row{
+    display:flex;
+    gap:10px;
+}
+
+/* GENDER */
+.gender{
+    display:flex;
+    gap:10px;
+}
+
+.gender label{
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border:1px solid #dddfe2;
+    padding:10px;
+    border-radius:8px;
+    font-size:14px;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+.gender label:hover{
+    border-color:#1877f2;
+    background:#f0f6ff;
+}
+
+/* BUTTON */
+button{
+    background: linear-gradient(135deg,#42b72a,#36a420);
+    color:#fff;
+    padding:13px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    width:100%;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* LOGIN */
+.login{
+    text-align:center;
+    margin-top:10px;
+}
+
+.login a{
+    color:#1877f2;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:500;
+}
+
+.login a:hover{
+    text-decoration:underline;
+}
+
+/* MOBILE */
+@media (max-width:500px){
+    .name-row{
+        flex-direction:column;
+    }
+
+    .row{
+        flex-direction:column;
+    }
+
+    .gender{
+        flex-direction:column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="signup-box">
+        <h1>facebook</h1>
+        <p>Create a new account</p>
+
+        <form>
+
+            <div class="name-row">
+                <input type="text" placeholder="First name">
+                <input type="text" placeholder="Surname">
+            </div>
+
+            <input type="email" placeholder="Mobile number or email">
+            <input type="password" placeholder="New password">
+
+            <div>
+                <div class="label">Date of birth</div>
+                <div class="row">
+                    <select><option>Day</option></select>
+                    <select><option>Month</option></select>
+                    <select><option>Year</option></select>
+                </div>
+            </div>
+
+            <div>
+                <div class="label">Gender</div>
+                <div class="gender">
+                    <label>Male <input type="radio" name="g"></label>
+                    <label>Female <input type="radio" name="g"></label>
+                    <label>Custom <input type="radio" name="g"></label>
+                </div>
+            </div>
+
+            <button>Sign Up</button>
+
+            <div class="login">
+                <a href="#">Already have an account?</a>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
